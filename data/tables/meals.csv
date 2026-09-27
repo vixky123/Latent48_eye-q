@@ -1,0 +1,6 @@
+meal_id,hostel,date,slot,start_time,end_time,menu_items,special_flag,weather,notes,source
+DIHING_20260926_B,DIHING,2026-09-26,B,07:30,09:30,poha;pasta;sprouts;bread;banana;chutney;egg,0,clear,nan,synthetic
+DIHING_20260926_L,DIHING,2026-09-26,L,12:15,14:15,rice;dal;curry;roti;curd;salad,0,clear,nan,synthetic
+DIHING_20260926_D,DIHING,2026-09-26,D,19:45,21:45,rice;dal;curry;roti;curd;salad,0,clear,scale borrowed back before service ended,synthetic
+DIHING_20260927_B,DIHING,2026-09-27,B,07:30,09:30,poha;pasta;sprouts;bread;banana;chutney;egg,0,rain,nan,synthetic
+DIHING_20260927_L,DIHING,2026-09-27,L,12:15,14:15,rice;dal;curry;roti;curd;salad,0,clear,nan,synthetic

@@ -1,0 +1,3 @@
+forecast_id,meal_id,target_start,made_at,hash_ok,sealed_before_meal,simulated_time,actual_footfall,predicted_footfall,lo,hi,abs_error,in_interval,baseline_subscribers,baseline_last_week,baseline_subscribers_abs_error,baseline_last_week_abs_error,source,counts
+DIHING_20260927_B_20260926T223000_B,DIHING_20260927_B,2026-09-27 07:30:00+05:30,2026-09-26 22:30:00+05:30,True,True,True,189.0,180.7,142.8,317.1,8.300000000000011,True,,197.0,,8.0,synthetic,True
+DIHING_20260927_L_20260926T223000_L,DIHING_20260927_L,2026-09-27 12:15:00+05:30,2026-09-26 22:30:00+05:30,True,True,True,302.0,276.8,242.1,345.3,25.19999999999999,True,400.0,283.0,98.0,19.0,synthetic,True

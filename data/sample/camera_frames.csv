@@ -1,0 +1,31 @@
+frame_id,meal_id,taken_at,file_name,kept,drop_reason,n_faces,n_persons,dhash,in_meal_window,source
+DIHING_20260926_B_526629a5ef,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_09.00.38.jpeg,True,,0,0,581860c74f8e8e18,,observed
+DIHING_20260926_B_0d7b5f0e5e,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_09.00.43.jpeg,True,,0,0,6193f32521a2e2c0,,observed
+DIHING_20260926_B_a8548f61fe,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_09.00.44.jpeg,True,,0,0,1c2b3333333999cc,,observed
+DIHING_20260926_B_1ea97db46f,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_09.00.52.jpeg,True,,0,0,ce47434bb99b8b63,,observed
+DIHING_20260926_B_1d6cde9220,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_09.00.56.jpeg,True,,0,0,82c3f30762622690,,observed
+DIHING_20260926_B_0045a0fe2a,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_09.01.24.jpeg,False,not a tray,0,0,8f2161474343050f,,observed
+DIHING_20260926_B_9ebd10d1a0,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_09.01.26.jpeg,True,,0,0,092c6cc8dca8b3b3,,observed
+DIHING_20260926_B_2b3ebce4aa,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_09.01.27.jpeg,True,,0,0,191b333727272d69,,observed
+DIHING_20260926_B_74387cb8db,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_09.18.02.jpeg,True,,0,0,cecaee624a9455ce,,observed
+DIHING_20260926_B_cd34c9600c,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_09.18.04.jpeg,True,,0,0,0ece6c2c3d1d677e,,observed
+DIHING_20260926_B_44e42e541b,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.11.41.jpeg,True,,0,0,4c0c98f0f1b390f0,,observed
+DIHING_20260926_B_b43e44d5e9,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.11.41_(1).jpeg,True,,0,0,580c161a08caca1c,,observed
+DIHING_20260926_B_9b6ce933ba,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.11.42.jpeg,True,,0,0,f8c5c9486861e0f0,,observed
+DIHING_20260926_B_a98b654ea4,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.11.44_(1).jpeg,True,,0,0,fe8387909a9a989f,,observed
+DIHING_20260926_B_fbfc89e635,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.11.48_(1).jpeg,True,,0,0,0c2837374f0f0f86,,observed
+DIHING_20260926_B_3058007019,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.11.48_(2).jpeg,True,,0,0,d0e9ebe863e7e3e3,,observed
+DIHING_20260926_B_9886453435,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.11.51.jpeg,True,,0,0,c0cc446464c64e60,,observed
+DIHING_20260926_B_b17dc06125,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.12.00.jpeg,True,,0,0,ce6e0c1c1c47a626,,observed
+DIHING_20260926_B_e51ee6f642,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.12.02.jpeg,True,,0,0,f38383363630b0f8,,observed
+DIHING_20260926_B_f818376c51,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.12.03.jpeg,False,not a tray,0,0,06c3cd8d8e9c8b4a,,observed
+DIHING_20260926_B_60f07f015c,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.12.31.jpeg,True,,0,0,9a988878e89dcde3,,observed
+DIHING_20260926_B_1f36cabf80,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.12.33.jpeg,True,,0,0,78e030307048d8d8,,observed
+DIHING_20260926_B_5bdf35e8ac,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.12.33_(1).jpeg,True,,0,0,86388886264cccec,,observed
+DIHING_20260926_B_38dc5b8de1,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.12.34.jpeg,True,,0,0,e0ada92737315658,,observed
+DIHING_20260926_B_95e1f7d515,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.12.34_(1).jpeg,True,,0,0,e1ece9e9e3676be0,,observed
+DIHING_20260926_B_943561bd18,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.12.35.jpeg,True,,0,0,e3a7e6f83836f678,,observed
+DIHING_20260926_B_885cfb4fba,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_10.12.36_(1).jpeg,True,,0,0,f1e2e1c183b3b232,,observed
+DIHING_20260926_B_e08d216449,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_14_21_50.jpeg,False,face,1,0,e06864ecc8e838dc,,observed
+DIHING_20260926_B_dde8f2b605,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_15.09.19.jpeg,True,,0,0,f0d2922ea6262c0c,,observed
+DIHING_20260926_B_eded802c11,DIHING_20260926_B,,WhatsApp_Image_2026-09-26_at_15.09.22.jpeg,True,,0,0,4c723b333372eccc,,observed

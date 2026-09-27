@@ -1,0 +1,31 @@
+meal_id,dish,qty,unit,method,source,qty_kg,kg_note
+DIHING_20260926_B,poha,14.15,kg,weighed,synthetic,14.15,
+DIHING_20260926_B,pasta,18.97,kg,weighed,synthetic,18.97,
+DIHING_20260926_B,sprouts,6.58,kg,weighed,synthetic,6.58,
+DIHING_20260926_B,bread,100.0,pieces,estimated,synthetic,2.5,pieces x 0.025 kg
+DIHING_20260926_B,banana,88.0,pieces,estimated,synthetic,9.68,pieces x 0.11 kg
+DIHING_20260926_B,egg,128.0,pieces,estimated,synthetic,6.4,pieces x 0.05 kg
+DIHING_20260926_L,rice,25.48,kg,weighed,synthetic,25.48,
+DIHING_20260926_L,dal,15.33,l,weighed,synthetic,16.096500000000002,litres x 1.05 kg/l
+DIHING_20260926_L,curry,7.03,kg,weighed,synthetic,7.03,
+DIHING_20260926_L,roti,252.0,pieces,estimated,synthetic,8.82,pieces x 0.035 kg
+DIHING_20260926_L,curd,12.8,kg,weighed,synthetic,12.8,
+DIHING_20260926_L,salad,3.61,kg,estimated,synthetic,3.61,
+DIHING_20260926_D,rice,4.58,kg,weighed,synthetic,4.58,
+DIHING_20260926_D,dal,10.95,l,weighed,synthetic,11.4975,litres x 1.05 kg/l
+DIHING_20260926_D,curry,8.05,kg,weighed,synthetic,8.05,
+DIHING_20260926_D,roti,299.0,pieces,estimated,synthetic,10.465000000000002,pieces x 0.035 kg
+DIHING_20260926_D,curd,2.72,kg,weighed,synthetic,2.72,
+DIHING_20260926_D,salad,3.47,kg,estimated,synthetic,3.47,
+DIHING_20260927_B,poha,20.44,kg,weighed,synthetic,20.44,
+DIHING_20260927_B,pasta,21.08,kg,weighed,synthetic,21.08,
+DIHING_20260927_B,sprouts,6.17,kg,weighed,synthetic,6.17,
+DIHING_20260927_B,bread,105.0,pieces,estimated,synthetic,2.625,pieces x 0.025 kg
+DIHING_20260927_B,banana,93.0,pieces,estimated,synthetic,10.23,pieces x 0.11 kg
+DIHING_20260927_B,egg,118.0,pieces,estimated,synthetic,5.9,pieces x 0.05 kg
+DIHING_20260927_L,rice,23.55,kg,weighed,synthetic,23.55,
+DIHING_20260927_L,dal,13.45,l,weighed,synthetic,14.1225,litres x 1.05 kg/l
+DIHING_20260927_L,curry,16.51,kg,weighed,synthetic,16.51,
+DIHING_20260927_L,roti,294.0,pieces,estimated,synthetic,10.290000000000001,pieces x 0.035 kg
+DIHING_20260927_L,curd,7.72,kg,weighed,synthetic,7.72,
+DIHING_20260927_L,salad,3.77,kg,estimated,synthetic,3.77,

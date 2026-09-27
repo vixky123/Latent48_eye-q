@@ -1,0 +1,83 @@
+{
+  "backtest": {
+    "mae_last_week": 39.35,
+    "mae_model": 46.79,
+    "mae_subscribers": 228.9,
+    "n": 17
+  },
+  "baselines": {
+    "last_week": 197.0,
+    "subscribers": null
+  },
+  "factors": {
+    "base": 177.3808,
+    "special": 1.0,
+    "weekday": 1.019
+  },
+  "forecast_id": "DIHING_20260927_B_20260926T223000_B",
+  "hi": 317.1,
+  "interval_method": "backtest quantiles (17 past meals)",
+  "lo": 142.8,
+  "made_at": "2026-09-26 22:30:00+05:30",
+  "meal_id": "DIHING_20260927_B",
+  "mode": "count",
+  "model_version": "shrunk-rate-v1",
+  "note": "recommended_kg = upper forecast bound x consumption per diner, so the kitchen should not run out.",
+  "predicted_footfall": 180.7,
+  "recommendations": [
+    {
+      "cook_for_all_subscribers_kg": null,
+      "dish": "poha",
+      "p_kg_per_diner": 0.207,
+      "p_source": "measured",
+      "recommended_kg": 65.63
+    },
+    {
+      "cook_for_all_subscribers_kg": null,
+      "dish": "pasta",
+      "p_kg_per_diner": 0.1472,
+      "p_source": "measured",
+      "recommended_kg": 46.68
+    },
+    {
+      "cook_for_all_subscribers_kg": null,
+      "dish": "sprouts",
+      "p_kg_per_diner": 0.0559,
+      "p_source": "measured",
+      "recommended_kg": 17.71
+    },
+    {
+      "cook_for_all_subscribers_kg": null,
+      "dish": "bread",
+      "p_kg_per_diner": 0.0274,
+      "p_source": "measured",
+      "recommended_kg": 8.69
+    },
+    {
+      "cook_for_all_subscribers_kg": null,
+      "dish": "banana",
+      "p_kg_per_diner": 0.1295,
+      "p_source": "measured",
+      "recommended_kg": 41.07
+    },
+    {
+      "cook_for_all_subscribers_kg": null,
+      "dish": "chutney",
+      "p_kg_per_diner": 0.03,
+      "p_source": "config serving_kg",
+      "recommended_kg": 9.51
+    },
+    {
+      "cook_for_all_subscribers_kg": null,
+      "dish": "egg",
+      "p_kg_per_diner": 0.0503,
+      "p_source": "measured",
+      "recommended_kg": 15.94
+    }
+  ],
+  "sha256": "c7793cd87a5c7607940db88815c5dd1a751d318eafd8779b6afa26ade73112f1",
+  "simulated_time": true,
+  "subscribers": null,
+  "target_start": "2026-09-27 07:30:00+05:30",
+  "train_meals": 20
+}

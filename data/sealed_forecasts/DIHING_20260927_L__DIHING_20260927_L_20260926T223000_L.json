@@ -1,0 +1,76 @@
+{
+  "backtest": {
+    "mae_last_week": 41.06,
+    "mae_model": 37.27,
+    "mae_subscribers": 122.6,
+    "n": 18
+  },
+  "baselines": {
+    "last_week": 283.0,
+    "subscribers": 400.0
+  },
+  "factors": {
+    "base": 0.6869,
+    "special": 1.0,
+    "weekday": 1.007
+  },
+  "forecast_id": "DIHING_20260927_L_20260926T223000_L",
+  "hi": 345.3,
+  "interval_method": "backtest quantiles (18 past meals)",
+  "lo": 242.1,
+  "made_at": "2026-09-26 22:30:00+05:30",
+  "meal_id": "DIHING_20260927_L",
+  "mode": "rate",
+  "model_version": "shrunk-rate-v1",
+  "note": "recommended_kg = upper forecast bound x consumption per diner, so the kitchen should not run out.",
+  "predicted_footfall": 276.8,
+  "recommendations": [
+    {
+      "cook_for_all_subscribers_kg": 93.71,
+      "dish": "rice",
+      "p_kg_per_diner": 0.2343,
+      "p_source": "measured",
+      "recommended_kg": 80.89
+    },
+    {
+      "cook_for_all_subscribers_kg": 66.18,
+      "dish": "dal",
+      "p_kg_per_diner": 0.1655,
+      "p_source": "measured",
+      "recommended_kg": 57.13
+    },
+    {
+      "cook_for_all_subscribers_kg": 69.18,
+      "dish": "curry",
+      "p_kg_per_diner": 0.1729,
+      "p_source": "measured",
+      "recommended_kg": 59.71
+    },
+    {
+      "cook_for_all_subscribers_kg": 44.49,
+      "dish": "roti",
+      "p_kg_per_diner": 0.1112,
+      "p_source": "measured",
+      "recommended_kg": 38.41
+    },
+    {
+      "cook_for_all_subscribers_kg": 34.21,
+      "dish": "curd",
+      "p_kg_per_diner": 0.0855,
+      "p_source": "measured",
+      "recommended_kg": 29.53
+    },
+    {
+      "cook_for_all_subscribers_kg": 18.48,
+      "dish": "salad",
+      "p_kg_per_diner": 0.0462,
+      "p_source": "measured",
+      "recommended_kg": 15.95
+    }
+  ],
+  "sha256": "61deb9d4aae3e810a3b5832366091ef4ecb5277ca2fffda6a2e947ef7f93252d",
+  "simulated_time": true,
+  "subscribers": 400.0,
+  "target_start": "2026-09-27 12:15:00+05:30",
+  "train_meals": 16
+}

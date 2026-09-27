@@ -1,0 +1,31 @@
+meal_id,dish,qty,unit,method,source,qty_kg,kg_note
+DIHING_20260926_B,poha,52.65,kg,weighed,synthetic,52.65,
+DIHING_20260926_B,pasta,46.35,kg,weighed,synthetic,46.35,
+DIHING_20260926_B,sprouts,16.97,kg,weighed,synthetic,16.97,
+DIHING_20260926_B,bread,304.0,pieces,cook_reported,synthetic,7.6000000000000005,pieces x 0.025 kg
+DIHING_20260926_B,banana,307.0,pieces,cook_reported,synthetic,33.77,pieces x 0.11 kg
+DIHING_20260926_B,chutney,8.81,kg,estimated,synthetic,8.81,
+DIHING_20260926_B,egg,315.0,pieces,cook_reported,synthetic,15.75,pieces x 0.05 kg
+DIHING_20260926_L,rice,85.16,kg,weighed,synthetic,85.16,
+DIHING_20260926_L,dal,56.04,l,weighed,synthetic,58.842,litres x 1.05 kg/l
+DIHING_20260926_L,curry,53.98,kg,weighed,synthetic,53.98,
+DIHING_20260926_L,roti,1148.0,pieces,cook_reported,synthetic,40.18000000000001,pieces x 0.035 kg
+DIHING_20260926_L,curd,32.89,kg,weighed,synthetic,32.89,
+DIHING_20260926_L,salad,16.55,kg,estimated,synthetic,16.55,
+DIHING_20260926_D,rice,80.35,kg,weighed,synthetic,80.35,
+DIHING_20260926_D,dal,61.11,l,weighed,synthetic,64.16550000000001,litres x 1.05 kg/l
+DIHING_20260926_D,curry,59.87,kg,weighed,synthetic,59.87,
+DIHING_20260926_D,roti,1204.0,pieces,cook_reported,synthetic,42.14,pieces x 0.035 kg
+DIHING_20260926_D,curd,32.79,kg,weighed,synthetic,32.79,
+DIHING_20260926_D,salad,16.75,kg,estimated,synthetic,16.75,
+DIHING_20260927_B,poha,52.04,kg,weighed,synthetic,52.04,
+DIHING_20260927_B,pasta,46.91,kg,weighed,synthetic,46.91,
+DIHING_20260927_B,sprouts,17.62,kg,weighed,synthetic,17.62,
+DIHING_20260927_B,bread,296.0,pieces,cook_reported,synthetic,7.4,pieces x 0.025 kg
+DIHING_20260927_B,banana,291.0,pieces,cook_reported,synthetic,32.01,pieces x 0.11 kg
+DIHING_20260927_B,chutney,8.79,kg,estimated,synthetic,8.79,
+DIHING_20260927_B,egg,305.0,pieces,cook_reported,synthetic,15.25,pieces x 0.05 kg
+DIHING_20260927_L,rice,83.24,kg,weighed,synthetic,83.24,
+DIHING_20260927_L,dal,60.81,l,weighed,synthetic,63.850500000000004,litres x 1.05 kg/l
+DIHING_20260927_L,curry,63.78,kg,weighed,synthetic,63.78,
+DIHING_20260927_L,roti,1227.0,pieces,cook_reported,synthetic,42.94500000000001,pieces x 0.035 kg
