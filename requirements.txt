@@ -1,0 +1,19 @@
+# core (all preinstalled on Kaggle except maybe pyarrow)
+pandas>=2.0
+numpy
+pyarrow
+pyyaml
+pillow
+opencv-python-headless
+matplotlib
+scikit-learn
+python-pptx
+
+# vision model on GPU (Kaggle: torch is preinstalled)
+torch
+transformers>=4.51
+accelerate
+
+# optional
+# anthropic        # Claude API labelling backend
+# ultralytics      # person detector in the privacy filter

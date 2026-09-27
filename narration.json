@@ -1,0 +1,56 @@
+[
+ {
+  "id": "01",
+  "secs": 12,
+  "text": "Dihing Hostel mess. Four hundred students subscribe. Every meal, the manager decides how much rice, dal and curry to cook, before a single person walks in.",
+  "label": ""
+ },
+ {
+  "id": "04",
+  "secs": 12,
+  "text": "Across five meals, three hundred and ninety four kilograms of food went to waste. About twenty nine thousand rupees, at the kitchen's own ingredient costs.",
+  "label": ""
+ },
+ {
+  "id": "05",
+  "secs": 14,
+  "text": "Split it by who can fix it. Fifty eight percent was cooked for subscribers who never came. Twenty percent came back on plates. Those are two different problems.",
+  "label": ""
+ },
+ {
+  "id": "06",
+  "secs": 13,
+  "text": "The kitchen cooks for about three hundred and forty people. On average, two hundred and fifty two turn up. That gap, three times a day, is the largest piece of waste here.",
+  "label": ""
+ },
+ {
+  "id": "07",
+  "secs": 13,
+  "text": "So we tested whether it could be closed. On Saturday night, the model predicted Sunday's turnout, and the file was hashed so it could not be quietly edited afterwards.",
+  "label": ""
+ },
+ {
+  "id": "08",
+  "secs": 13,
+  "text": "Sunday breakfast: predicted one hundred and eighty one, one hundred and eighty nine came. Sunday lunch: predicted two hundred and seventy seven, three hundred and two came.",
+  "label": ""
+ },
+ {
+  "id": "09",
+  "secs": 14,
+  "text": "An average miss of seventeen diners. Cooking for the full subscriber list misses by ninety eight. Copying last week misses by fourteen, so on two meals the simple baseline held its own.",
+  "label": ""
+ },
+ {
+  "id": "10",
+  "secs": 13,
+  "text": "So: cook to one number decided the night before, instead of to the subscriber list. And the dish that comes back most often goes to the monthly menu meeting.",
+  "label": ""
+ },
+ {
+  "id": "02",
+  "secs": 12,
+  "text": "All of it from cheap instruments. Diners tallied at the door every fifteen minutes, a phone above the return counter, and the scraping bin on a luggage scale.",
+  "label": ""
+ }
+]

@@ -1,0 +1,97 @@
+# ---------------------------------------------------------------------------
+# Mess Waste project config. Edit this before the hackathon starts.
+# Every value here can be left as-is for the demo run.
+# ---------------------------------------------------------------------------
+
+project:
+  hostel_code: "DIHING"          # short code used in meal_ids
+  hostel_name: "Dihing Hostel Mess"  # shown on the dashboard
+  timezone: "Asia/Kolkata"
+
+paths:
+  # Leave empty to auto-detect.
+  #   Kaggle : raw_root = first folder under /kaggle/input that contains csv/meals.csv
+  #            out_root = /kaggle/working/out
+  #   Local  : raw_root = ./data/raw , out_root = ./data/out
+  # Environment variables MW_RAW_ROOT / MW_OUT_ROOT override these.
+  raw_root: ""
+  out_root: ""
+
+# Default meal windows (used when meals.csv leaves start/end empty)
+meal_slots:
+  B: { name: "Breakfast", start: "07:30", end: "09:30" }
+  L: { name: "Lunch",     start: "12:15", end: "14:15" }
+  D: { name: "Dinner",    start: "19:45", end: "21:45" }
+
+# Dish dictionary. Keys are canonical names used everywhere in the data.
+#   aliases       : other spellings people may type on tally sheets
+#   density_kg_per_l : used when a quantity is recorded in litres (default 1.0)
+#   piece_kg      : needed if a quantity is recorded in pieces (roti, egg...)
+#   serving_kg    : fallback per-diner consumption when production data is missing
+#   cost_per_kg_inr : fallback cost when dish_costs.csv has no row for the dish
+dishes:
+  rice:        { aliases: ["plain rice", "chawal", "steamed rice"], serving_kg: 0.20, cost_per_kg_inr: 45 }
+  dal:         { aliases: ["daal", "dal fry", "dal tadka", "yellow dal"], density_kg_per_l: 1.05, serving_kg: 0.15, cost_per_kg_inr: 60 }
+  roti:        { aliases: ["chapati", "chapatti", "phulka"], piece_kg: 0.035, serving_kg: 0.10, cost_per_kg_inr: 70 }
+  sabzi:       { aliases: ["veg", "mix veg", "aloo sabzi", "dry veg"], serving_kg: 0.12, cost_per_kg_inr: 80 }
+  curry:       { aliases: ["gravy", "paneer curry", "chicken curry", "egg curry", "rajma", "chole"], density_kg_per_l: 1.05, serving_kg: 0.15, cost_per_kg_inr: 140 }
+  curd:        { aliases: ["dahi", "raita"], density_kg_per_l: 1.03, serving_kg: 0.08, cost_per_kg_inr: 70 }
+  salad:       { aliases: [], serving_kg: 0.04, cost_per_kg_inr: 40 }
+  poha:        { aliases: ["upma"], serving_kg: 0.18, cost_per_kg_inr: 50 }
+  paratha:     { aliases: ["aloo paratha"], piece_kg: 0.09, serving_kg: 0.18, cost_per_kg_inr: 75 }
+  bread:       { aliases: ["bread slice", "toast"], piece_kg: 0.025, serving_kg: 0.08, cost_per_kg_inr: 60 }
+  egg:         { aliases: ["boiled egg", "omelette"], piece_kg: 0.05, serving_kg: 0.05, cost_per_kg_inr: 130 }
+  sweet:       { aliases: ["kheer", "halwa", "gulab jamun", "dessert"], serving_kg: 0.06, cost_per_kg_inr: 120 }
+  sprouts:     { aliases: ["moong sprouts", "sprout chana", "chana"], serving_kg: 0.06, cost_per_kg_inr: 90 }
+  banana:      { aliases: [], piece_kg: 0.11, serving_kg: 0.11, cost_per_kg_inr: 55 }
+  chutney:     { aliases: ["green chutney", "coconut chutney"], serving_kg: 0.03, cost_per_kg_inr: 70 }
+  dosa:        { aliases: ["uttapam", "idli"], piece_kg: 0.10, serving_kg: 0.10, cost_per_kg_inr: 65 }
+  pasta:       { aliases: ["macaroni", "white sauce pasta"], serving_kg: 0.15, cost_per_kg_inr: 85 }
+
+camera:
+  max_side_px: 1024          # kept frames are resized to this and EXIF (incl. GPS) is stripped
+  dedup_mean_abs_diff: 3.0   # consecutive frames whose 64x48 greyscale versions differ by <= this (0-255) are duplicates
+  face_detector: "yunet"     # yunet (small DNN, downloaded once, falls back to haar offline) | haar | none
+  yunet_score: 0.8
+  haar_min_neighbors: 8      # higher = fewer false alarms on round plates, more missed faces
+  haar_min_size_px: 60
+  min_steel_fraction: 0.35   # below this share of bright, low-saturation pixels the frame is not a tray
+  person_detector: "none"    # yolo (needs `pip install ultralytics` + internet) | none
+  yolo_model: "yolov8n.pt"
+  yolo_conf: 0.40
+  warn_if_outside_meal_window: true
+
+labeling:
+  backend: "hf"              # hf (local VLM on the Kaggle GPUs) | anthropic | mock
+  hf_model_id: "Qwen/Qwen2.5-VL-7B-Instruct"
+  hf_dtype: "float16"        # T4 has no bf16; use float32 with the 3B model if outputs look broken
+  hf_batch_size: 4
+  hf_max_side_px: 768        # images are downscaled to this before labelling
+  hf_max_new_tokens: 200
+  anthropic_model: "claude-haiku-4-5-20251001"
+  checkpoint_every: 20       # batches between partial saves (Kaggle sessions can die)
+  # Labels from an earlier Kaggle session are reused if you add that session's output as an input:
+  prior_labels_glob: "/kaggle/input/**/plate_labels_model.parquet"
+  fraction_grid: [0.0, 0.25, 0.5, 0.75, 1.0]
+
+analysis:
+  # Which plate labels drive per-dish attribution of the bin weight:
+  #   model : vision-model labels on every kept frame
+  #   best  : human consensus where it exists, model elsewhere
+  attribution_labels: "best"
+
+forecast:
+  half_life_days: 7          # recent days count more
+  shrink_k: 3                # pseudo-observations pulling weekday/special factors toward 1
+  interval_quantiles: [0.10, 0.90]
+  default_rel_err: 0.15      # used when there is too little history to backtest
+  min_backtest_errors: 5
+  min_train_points: 3
+
+presentation:
+  team_name: "Mess waste pilot"             # shown on slide 1
+  user_name: "The Dihing Hostel mess manager"   # the named user, e.g. "Mr. X, mess manager, Kapili hostel"
+  demo_url: ""                              # demo / dashboard link shown on slide 3
+
+dashboard:
+  autorefresh_seconds: 0     # set e.g. 60 when presenting from a laptop that re-runs the pipeline
